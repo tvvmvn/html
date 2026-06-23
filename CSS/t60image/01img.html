@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>object fit</h1>
+  <p>handle fitting image on given size on img element</p>
+
+
+  <style>
+    img {
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+    }
+
+    .object-fill {
+      object-fit: fill;
+    }
+
+    .object-contain {
+      object-fit: contain;
+    }
+
+    .object-cover {
+      object-fit: cover;
+    }
+  </style>
+
+
+  <h3>fill (default)</h3>
+  <img class="object-fill" src="https://tvvmvn.github.io/resource/img/simba.webp" alt="">
+
+  <h3>cover</h3>
+  <img class="object-cover" src="https://tvvmvn.github.io/resource/img/simba.webp" alt="">
+
+  <h3>contain</h3>
+  <img class="object-contain" src="https://tvvmvn.github.io/resource/img/simba.webp" alt="">
+
+</body>
+
+</html>
