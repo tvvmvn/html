@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Info</h1>
+  <p>
+    <!-- 
+      label
+      input의 이름표
+      for속성: 원하는 input과 연결하는 용도
+    -->
+    <label for="first-name">First Name</label>
+    <!-- 
+      name: 서버에서 이 name을 보고 폼의 데이터를 구분합니다.
+      placeholder: 예시용 값을 보여줍니다. 
+      required: 필수값
+      id: 라벨의 for와 일치해야 합니다.
+    -->
+    <input 
+      type="text" 
+      name="first-name" 
+      id="first-name"
+      placeholder="John"
+      required
+    >
+  </p>
+
+  <p>
+    <label for="last-name">Last Name</label>
+    <input 
+      type="text" 
+      name="last-name" 
+      id="last-name"
+      placeholder="Doe"
+      required
+    >
+  </p>
+  
+</body>
+</html>

@@ -8,22 +8,16 @@
 </head>
 <body>
 
-  <h1>font style</h1>
+  <h1>focus</h1>
 
   <style>
-    .not-italic {
-      font-style: normal;
+    input:focus {
+      outline: 2px solid #ddd;
     }
-    
-    .italic {
-      font-style: italic
-    }
-  </style>
+  </style>  
 
-
-  <p class="not-italic">font style: normal</p>
-
-  <p class="italic">font style: italic</p>
+  <label for="username">Username</label>
+  <input type="text" id="username">
   
 </body>
 </html>

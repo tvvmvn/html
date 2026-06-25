@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>inherit</h1>
+
+  <style>
+    ul {
+      font-style: italic;
+    }
+
+    .a li {
+      /* 타이포그래픽 속성(font-style)은 기본적으로 상속됨 */
+      font-style: inherit;
+    }
+
+    .b li {
+      /* 덮어쓰기 */
+      font-style: normal;
+    }
+  </style>
+
+  <h3>inherit</h3>
+  <ul class="a">
+    <li>foo</li>
+    <li>bar</li>
+    <li>baz</li>
+  </ul>
+
+  <h3>no inherit</h3>
+  <ul class="b">
+    <li>foo</li>
+    <li>bar</li>
+    <li>baz</li>
+  </ul>
+  
+</body>
+</html>

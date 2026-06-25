@@ -8,22 +8,17 @@
 </head>
 <body>
 
-  <h1>font style</h1>
+  <h1>checked</h1>
 
   <style>
-    .not-italic {
-      font-style: normal;
+    input:checked + label {
+      text-decoration-line: line-through;
     }
-    
-    .italic {
-      font-style: italic
-    }
-  </style>
+  </style>  
 
-
-  <p class="not-italic">font style: normal</p>
-
-  <p class="italic">font style: italic</p>
+  <h3>할일 목록</h3>
+  <input type="checkbox" name="eat" id="eat">
+  <label for="eat">밥먹기</label>
   
 </body>
 </html>
