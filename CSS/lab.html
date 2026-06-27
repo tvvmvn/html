@@ -7,15 +7,43 @@
 </head>
 <body>
 
-  <h3>block</h3>
-  <p>foo</p>
-  <p>bar</p>
-  <p>baz</p>
+  <h1>border</h1>
 
-  <h3>inline</h3>
-  <span>foo</span>
-  <span>bar</span>
-  <span>baz</span>
+  <style>
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+
+    .border-t {
+      border-top: 1px solid #000;
+    }
+
+    .border-b {
+      border-bottom: 1px solid #000;
+    }
+
+    .border-l {
+      border-left: 1px solid #000;
+    }
+
+    .border-r {
+      border-right: 1px solid #000;
+    }
+  </style>
+
+
+  <h3>border top</h3>
+  <div class="item border-t">item</div>
+
+  <h3>border bottom</h3>
+  <div class="item border-b">item</div>
+
+  <h3>border left</h3>
+  <div class="item border-l">item</div>
+
+  <h3>border right</h3>
+  <div class="item border-r">item</div>
 
 </body>
 </html>
