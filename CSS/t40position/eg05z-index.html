@@ -7,8 +7,47 @@
 </head>
 <body>
 
-  <h1>z-index</h1>
-  
+  <h1>position: absolute</h1>
+
+  <style>
+    .container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid;
+    }
+
+    .item {
+      background-color: #ddd;
+      padding: 0.5rem;
+    }
+    
+    .relative {
+      position: relative;
+    }
+
+    .absolute {
+      position: absolute;
+    }
+
+    .a {
+      top: 0; left: 0;
+    }
+
+    .b {
+      top: 1rem; left: 1rem; z-index: 1;
+    }
+
+    .c {
+      top: 2rem; left: 2rem;
+    }
+
+  </style>
+
+  <div class="container relative">
+    <div class="item absolute a">item 1</div>
+    <div class="item absolute b">item 2</div>
+    <div class="item absolute c">item 2</div>
+  </div>
   
 </body>
 </html>

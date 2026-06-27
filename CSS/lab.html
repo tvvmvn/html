@@ -7,43 +7,30 @@
 </head>
 <body>
 
-  <h1>border</h1>
 
   <style>
+    .container {
+      height: 200px;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 4px;
+    }
+
     .item {
-      background-color: #ddd;
-      padding: 0.5rem;
-    }
-
-    .border-t {
-      border-top: 1px solid #000;
-    }
-
-    .border-b {
-      border-bottom: 1px solid #000;
-    }
-
-    .border-l {
-      border-left: 1px solid #000;
-    }
-
-    .border-r {
-      border-right: 1px solid #000;
+      background-color: #000;
+      color: #fff;
     }
   </style>
 
+  <div class="container">
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
 
-  <h3>border top</h3>
-  <div class="item border-t">item</div>
-
-  <h3>border bottom</h3>
-  <div class="item border-b">item</div>
-
-  <h3>border left</h3>
-  <div class="item border-l">item</div>
-
-  <h3>border right</h3>
-  <div class="item border-r">item</div>
-
+  
 </body>
 </html>

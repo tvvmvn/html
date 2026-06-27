@@ -17,55 +17,41 @@
       flex-direction: row;
       width: 100px;
       height: 100px;
-      gap: 4px;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .flex-col {
+      flex-direction: column;
     }
 
     .item {
       background-color: #000;
       color: #fff;
-      padding: 0.5rem;
-    }
-
-    .items-stretch {
-      align-items: stretch;
-    }
-
-    .items-start {
-      align-items: flex-start;
+      width: 20px;
+      height: 20px;
     }
 
     .items-center {
       align-items: center;
     }
 
-    .items-end {
-      align-items: flex-end;
+    .justify-between {
+      justify-content: space-between;
     }
     </style>
 
-  <h3>stretch</h3>
-  <div class="container items-stretch">
+  <h3>1</h3>
+  <div class="container flex-row justify-between items-center">
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
   </div>
 
-  <h3>flex start</h3>
-  <div class="container items-start">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
-
-  <h3>center</h3>
-  <div class="container items-center">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-  </div>
-
-  <h3>flex end</h3>
-  <div class="container items-end">
+  <h3>2</h3>
+  <div class="container flex-col justify-between items-center">
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
