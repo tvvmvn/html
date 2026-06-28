@@ -7,16 +7,15 @@
 </head>
 <body>
 
-  <h1>align items (row)</h1>
+  <h1>quiz</h1>
   <!-- 아이템 행/열의 위치 -->
 
   <style>
     .container {
       border: 1px solid;
       display: flex;
-      flex-direction: row;
-      width: 100px;
       height: 100px;
+      gap: 0.5rem;
     }
 
     .flex-row {
@@ -30,8 +29,7 @@
     .item {
       background-color: #000;
       color: #fff;
-      width: 20px;
-      height: 20px;
+      padding: 0.5rem;
     }
 
     .items-center {
@@ -41,20 +39,21 @@
     .justify-between {
       justify-content: space-between;
     }
+
+    .justify-center {
+      justify-content: center;
+    }
     </style>
 
   <h3>1</h3>
   <div class="container flex-row justify-between items-center">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
+    <div class="item">item</div>
+    <div class="item">item</div>
   </div>
 
   <h3>2</h3>
-  <div class="container flex-col justify-between items-center">
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
+  <div class="container justify-center items-center">
+  <div class="item">item</div>
   </div>
   
 </body>

@@ -1,36 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
 
+    <!-- 
+      4 = 1rem 
+      24 = 6rem(96px)
+    -->
+    
+    <div class="item w-24 h-24 bg-gray-400"></div>
 
-  <style>
-    .container {
-      height: 200px;
-      border: 1px solid;
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center; */
-      align-items: center;
-      gap: 4px;
-    }
-
-    .item {
-      background-color: #000;
-      color: #fff;
-    }
-  </style>
-
-  <div class="container">
-    <div class="item">item</div>
-    <div class="item">item</div>
-    <div class="item">item</div>
-  </div>
-
-  
-</body>
+  </body>
 </html>

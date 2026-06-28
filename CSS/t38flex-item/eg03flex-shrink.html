@@ -13,14 +13,14 @@
     .container {  
       background-color: #ddd;
       display: flex;
-      width: 100px;
-      height: 100px;
+      gap: 0.5rem;
     }
 
     .item {
       background-color: #000;
-      width: 60px;
-      height: 20px;
+      color: #fff;
+      padding: 0.5rem;
+      width: 200px;
     }
 
     .shrink {
@@ -28,23 +28,23 @@
     }
     
     .shrink-0 {
-      background-color: #f00;
       flex-shrink: 0;
+      background-color: #f00;
     }
   </style>
 
-  <h3>with shrink</h3>
+  <h3>flex-shrink: 1</h3>
   <div class="container">
-    <div class="item shrink"></div>
-    <div class="item shrink"></div>
-    <div class="item shrink"></div>
+    <div class="item shrink">item 1</div>
+    <div class="item shrink">item 2</div>
+    <div class="item shrink">item 3</div>
   </div>
 
-  <h3>without shrink</h3>
+  <h3>flex-shrink: 0 (item 2)</h3>
   <div class="container">
-    <div class="item shrink"></div>
-    <div class="item shrink-0"></div>
-    <div class="item shrink"></div>
+    <div class="item shrink">item 1</div>
+    <div class="item shrink-0">item 2</div>
+    <div class="item shrink">item 3</div>
   </div>
   
 </body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    .item {
+      padding: 0.5rem;
+      background-color: #ddd;
+    }
+  </style>
+
+  <div class="container">
+    <div class="item">item 1</div>
+    <div class="item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Cum, dignissimos dolore sint veniam eum in distinctio esse 
+      perferendis et molestias labore eius voluptate aut 
+      hic optio quo accusantium nulla 
+      <!-- min-content: 이 단어를 쪼갤 수는 없어ㅠ -->
+      laborumsfasdfafafadffafsdafasfafa?
+    </div>
+    <div class="item">item 3</div>
+  </div>
+
+  
+</body>
+</html>

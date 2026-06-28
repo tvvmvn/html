@@ -13,40 +13,37 @@
     .container {
       border: 1px solid;
       display: flex;
-      gap: 4px;
-      width: 100px;
-      height: 100px;
+      gap: 0.5rem;
     }
 
     .item {
       background-color: #000;
       color: #fff;
-      width: 20px;
-      height: 20px;
-    }
-
-    .grow {
-      background-color: #f00;
-      flex-grow: 1;
+      padding: 0.5rem;
     }
 
     .grow-0 {
       flex-grow: 0;
     }
+
+    .grow {
+      flex-grow: 1;
+      background-color: #0a0;
+    }
   </style>
 
-  <h3>without grow</h3>
+  <h3>flex-grow: 0</h3>
   <div class="container">
-    <div class="item grow-0"></div>
-    <div class="item grow-0"></div>
-    <div class="item grow-0"></div>
+    <div class="item grow-0">item 1</div>
+    <div class="item grow-0">item 2</div>
+    <div class="item grow-0">item 3</div>
   </div>
 
-  <h3>with grow</h3>
+  <h3>flex-grow: 1 (item 2)</h3>
   <div class="container">
-    <div class="item grow-0"></div>
-    <div class="item grow"></div>
-    <div class="item grow-0"></div>
+    <div class="item grow-0">item 1</div>
+    <div class="item grow">item 2</div>
+    <div class="item grow-0">item 3</div>
   </div>
   
 </body>

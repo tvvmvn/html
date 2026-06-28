@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>box-sizing</h1>
+
+  <style>
+    .item {
+      border: 1px solid;
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      border: 4px solid;
+    }
+
+    .box-border {
+      box-sizing: border-box;
+    }
+
+    .box-content {
+      box-sizing: content-box;
+    }
+  </style>
+
+  <h3>box-sizing: border-box</h3>
+  <div class="item box-border">
+    100 x 100
+  </div>
+
+  <h3>box-sizing: content-box</h3>
+  <div class="item box-content">
+    100 x 100
+  </div>
+  
+</body>
+</html>
